@@ -6,11 +6,11 @@
  
 .search {
   display: block;
-  width: 602rpx;
+  width: 610rpx;
   height: 60rpx;
   background-color: white;
   border: 1rpx solid rgba(44, 44, 44, 0.836);
-  border-radius: 20rpx;
+  border-radius: 10rpx;
   margin: 30rpx auto;
   padding-left: 30rpx;
 }
@@ -21,12 +21,13 @@
 
 .aitem {
   padding: 16rpx 10rpx 10rpx 20rpx;
-  margin-bottom: 10rpx;
-  background-color: rgba(233, 230, 230, 0.664);
+  margin-bottom: 20rpx;
+  /* background-color: rgba(233, 230, 230, 0.664); */
   border-bottom: solid rgb(214, 214, 214) 1rpx;
-  border-radius: 14rpx;
+  border-radius: 10rpx;
   display: flex;
   flex-direction: column;
+  box-shadow: 1rpx 1rpx 6rpx 3rpx rgb(212, 212, 212);
 }
 .content {
   font-size: 36rpx;

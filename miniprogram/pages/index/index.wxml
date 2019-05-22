@@ -13,26 +13,36 @@
   </view>
 
   <view class="first">
-    <view class="number">
-      <text class="num">{{numall}}</text>
-      <text class='small'>条数汇总</text>
+    <view class="icon1">
+      <view class="icon">
+        <image class="top" src="../../images/others/record.png" /> 
+        <text class='small'>条数汇总</text>
+      </view>
+      <view class="number">
+        <text class="num1">{{numall}}</text>
+      </view>
     </view>
-    <view class="number">
-      <text class="num">{{proportion}}%</text>
-      <text class='small'>完成比率</text>
+    <view class="icon2">
+      <view class="icon">
+        <image class="top" src="../../images/others/percent.png" />
+        <text class='small'>完成比率</text>
+      </view>
+      <view class="number">
+        <text class="num2">{{proportion}}%</text>
+      </view>
     </view>
   </view>
 
   <view class="second">
-    <view class="index-item line">
+    <view class="index-item line" bindtap="toAddPage">
       <image class="add" src="../../images/others/add.png" />
-      <text class="tag1" bindtap="toAddPage">写记录</text>
+      <text class="tag1" >记录回忆</text>
       <image class='rfloat' src='../../images/others/right.png'></image>
     </view>
 
     <view class="index-item">
       <image class="add" src="../../images/others/yes.png" />
-      <text class="tag1">定计划</text>
+      <text class="tag1">指定计划</text>
       <image class='rfloat' src='../../images/others/right.png'></image>
     </view>
 

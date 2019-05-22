@@ -1,41 +1,41 @@
 /* pages/notes/notes.wxss */
 page {
-    background-color: rgb(243, 243, 243);
     height: 100%;
     box-sizing: border-box;
 
 }
 .container {
     background-color: white;
-    margin: 0 auto;
-    padding: 20rpx;
-    height: 100%;    
+    padding: 40rpx;
+    /* height: 100%;     */
     
     
 }
  
-.userinfo {
-    height: 300rpx;
-    border-radius: 10rpx;
+.plan {
+    height: 150rpx;
+    padding: 20rpx;
+    border-radius: 24rpx;
     border: 2rpx solid gray;
-    margin-right: 60rpx; 
-    margin-bottom: 50rpx;
+    margin: 30rpx auto;
+   
 
  }
 
  .calendar {
-    background-color:rgb(233, 230, 230);  /*背景色为白色*/
+    background-color:rgba(178, 236, 247, 0.356);  /*背景色为白色*/
     padding-top: 10px;       /*上内边距为 10px*/
-    border-radius: 15px;     /*添加边框圆角*/
+    border-radius: 24rpx;     /*添加边框圆角*/
     /* margin-right: 60rpx; */
-    width: 690rpx;
+    /* width: 690rpx; */
 }
 .userinfo-nickname {
     display: inline;
 }
-.btn-newtip {
-     
+ 
+picker {
+    margin-top: 30rpx;
+    margin-left: 20rpx;
 
 }
-
  

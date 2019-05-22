@@ -11,10 +11,26 @@ page {
   /* padding-top: 50rpx; */
 
 }
+.words {
+  width: 600rpx;
+  padding: 20rpx;
+  border: 0.5rpx solid rgb(198, 198, 198);
+  border-radius: 15rpx;
+  margin-top: 80rpx;
+  margin-bottom: 40rpx;
+}
+.tag {
+  color: rgba(49, 48, 48, 0.856);
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+}
 .choose {
-  margin-left: 20rpx;
-  margin-top: 100rpx;
-
+  margin-left: 10rpx;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: start;
 }
 checkbox{
   transform: scale(0.7,0.7);
@@ -39,24 +55,16 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
 
 }
 .item {
-   
-  margin-right: 20rpx; 
+ 
+  margin-right: 10rpx; 
   font-size: 44rpx;
 }
-.words {
-  width: 600rpx;
-  border: 0.5rpx solid rgb(198, 198, 198);
-  border-radius: 3%;
-  margin-top: 80rpx;
-  margin-bottom: 30rpx;
-  margin-left: 20rpx;
 
-}
 
 .btn-newtip {
-  margin-top: 150rpx;
+  margin-top: 110rpx;
   background-color: rgb(240, 240, 240);
-  width: 200rpx;
+  width: 160rpx;
 
 }
 

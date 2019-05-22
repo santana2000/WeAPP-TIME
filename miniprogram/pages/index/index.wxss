@@ -21,8 +21,6 @@ page {
 .userinfo {
   background-color: white;
   padding: 50rpx 50rpx;
-  /* height: 195rpx;
-  position: relative; */
   display: flex;
 
 }
@@ -48,27 +46,61 @@ page {
 .first {
   height: 180rpx;
   margin-top: 50rpx;
-  padding: 0 80rpx 0 80rpx;
-  background-color: white;
+  padding: 0 40rpx 0 40rpx;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   border: 0.5rpx solid rgb(243, 243, 243)
 }
-.number {
-  flex-basis: 200rpx;
+.icon1 {
+  background-color: white;
+  width: 300rpx;
+  margin-right: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  border-radius: 15rpx;
+}
+.icon2 {
+  background-color: white;
+  width: 300rpx;
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex: 1;
+  border-radius: 15rpx;
+}
+
+.icon {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-
+  justify-content: center;
+  margin-left: 30rpx;
 }
-.num {
+.top {
+  width: 100rpx;
+  height: 100rpx;
   align-self: center;
+  margin-right: 5rpx;
+}
+.number {
+  align-self: center;
+}
+.num1 {
+  font-size: 50rpx;
+  margin-right: 30rpx;
+}
+.num2 {
+  font-size: 50rpx;
+  margin-right: 10rpx;
 }
 .small {
   /* display: block; */
-  font-size: 30rpx;
+  font-size: 24rpx;
   align-self: center;
+  margin-top: 10rpx
 
 }
 .second {
@@ -99,7 +131,7 @@ page {
 
 }
 .tag1 {
-  margin-right: 420rpx;
+  margin-right: 380rpx;
 }
 .tag2 {
   margin-right: 380rpx;
