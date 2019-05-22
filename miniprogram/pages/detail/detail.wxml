@@ -1,0 +1,3 @@
+<!--pages/detail/detail.wxml-->
+<text>note详情：ID参考</text>
+<view >{{num}}</view>

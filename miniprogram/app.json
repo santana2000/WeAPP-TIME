@@ -1,0 +1,59 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/notes/notes",
+    "pages/memos/memos",
+    "pages/add/add",
+    "pages/about/about",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+
+  "tabBar":{
+    "color": "#8a8a8a",
+    "selectedColor": "#2c2c2c",
+    "list":[
+      {
+        "pagePath":"pages/notes/notes",
+        "text":"过去",
+        "iconPath":"images/icons/11.png",
+        "selectedIconPath":"images/icons/12.png"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "text":"我的",
+        "iconPath":"images/icons/21.png",
+        "selectedIconPath":"images/icons/22.png"
+      },
+      {
+        "pagePath":"pages/memos/memos",
+        "text":"未来",
+        "iconPath":"images/icons/31.png",
+        "selectedIconPath":"images/icons/32.png"
+      }
+    ]
+  
+  },
+
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "white",
+    "navigationBarTextStyle": "black"
+  },
+
+  "sitemapLocation": "sitemap.json",
+  
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+
+  "plugins": {
+    "calendar": {
+        "version": "1.1.0",
+        "provider": "wx92c68dae5a8bb046"
+    }
+  }
+}

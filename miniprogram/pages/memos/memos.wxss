@@ -1,0 +1,41 @@
+/* pages/notes/notes.wxss */
+page {
+    background-color: rgb(243, 243, 243);
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.container {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20rpx;
+    height: 100%;    
+    
+    
+}
+ 
+.userinfo {
+    height: 300rpx;
+    border-radius: 10rpx;
+    border: 2rpx solid gray;
+    margin-right: 60rpx; 
+    margin-bottom: 50rpx;
+
+ }
+
+ .calendar {
+    background-color:rgb(233, 230, 230);  /*背景色为白色*/
+    padding-top: 10px;       /*上内边距为 10px*/
+    border-radius: 15px;     /*添加边框圆角*/
+    /* margin-right: 60rpx; */
+    width: 690rpx;
+}
+.userinfo-nickname {
+    display: inline;
+}
+.btn-newtip {
+     
+
+}
+
+ 

@@ -1,0 +1,10 @@
+
+{
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor":"white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "notes",
+    "enablePullDownRefresh": true
+    
+    
+}

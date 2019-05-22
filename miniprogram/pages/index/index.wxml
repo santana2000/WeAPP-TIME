@@ -1,0 +1,65 @@
+<!--index.wxml-->
+
+
+<!--index.wxml-->
+<view class="container">
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class="first">
+    <view class="number">
+      <text class="num">{{numall}}</text>
+      <text class='small'>条数汇总</text>
+    </view>
+    <view class="number">
+      <text class="num">{{proportion}}%</text>
+      <text class='small'>完成比率</text>
+    </view>
+  </view>
+
+  <view class="second">
+    <view class="index-item line">
+      <image class="add" src="../../images/others/add.png" />
+      <text class="tag1" bindtap="toAddPage">写记录</text>
+      <image class='rfloat' src='../../images/others/right.png'></image>
+    </view>
+
+    <view class="index-item">
+      <image class="add" src="../../images/others/yes.png" />
+      <text class="tag1">定计划</text>
+      <image class='rfloat' src='../../images/others/right.png'></image>
+    </view>
+
+  </view>
+
+  <view class="third">
+    <view class="index-item line">
+      <image class="add" src="../../images/others/yinwen.png" />
+      <text class="tag2">使用说明</text>
+      <image class='rfloat' src='../../images/others/right.png'></image>
+    </view>
+
+    <view class="index-item">
+      <image class="add" src="../../images/others/about.png" />
+      <text class="tag2">关于我们</text>
+      <image class='rfloat' src='../../images/others/right.png'></image>
+    </view>
+
+  </view>
+  
+  <!-- <view class="addnew">
+    <button id="note" class="btn-newtip"  loading="{{loading}}" disabled="{{disabled}}" bindtap="toAddPage">
+      note
+    </button>
+    <image id="add" src="../../images/others/add.png" />
+    <button id="memo" class="btn-newtip"  loading="{{loading}}" disabled="{{disabled}}"  >
+      memo 
+    </button>
+  </view>  -->
+</view>

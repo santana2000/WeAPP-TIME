@@ -1,0 +1,70 @@
+
+
+/* pages/notes/notes.wxss */
+page {
+  background-color: white;
+  height: 100%;
+
+}
+.container {
+  padding:50rpx;
+  /* padding-top: 50rpx; */
+
+}
+.choose {
+  margin-left: 20rpx;
+  margin-top: 100rpx;
+
+}
+checkbox{
+  transform: scale(0.7,0.7);
+  /* width: 20rpx; */
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+   border: none;
+   background: rgb(74, 190, 171);
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+   /* border-radius: 50%;圆角 */
+   width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+   line-height: 40rpx;
+   text-align: center;
+   font-size:30rpx; /* 对勾大小 30rpx */
+   color:#fff; /* 对勾颜色 白色 */
+   background: transparent;
+   transform:translate(-50%, -50%) scale(1);
+   -webkit-transform:translate(-50%, -50%) scale(1);
+
+}
+.item {
+   
+  margin-right: 20rpx; 
+  font-size: 44rpx;
+}
+.words {
+  width: 600rpx;
+  border: 0.5rpx solid rgb(198, 198, 198);
+  border-radius: 3%;
+  margin-top: 80rpx;
+  margin-bottom: 30rpx;
+  margin-left: 20rpx;
+
+}
+
+.btn-newtip {
+  margin-top: 150rpx;
+  background-color: rgb(240, 240, 240);
+  width: 200rpx;
+
+}
+
+.now {
+  
+  color: brown;
+}
+input{
+  display: none;
+}
+

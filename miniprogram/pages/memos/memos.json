@@ -1,0 +1,11 @@
+
+{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor":"white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "memos",
+    "usingComponents": {
+        "calendar": "plugin://calendar/calendar"
+      }
+    
+    }

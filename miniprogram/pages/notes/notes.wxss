@@ -1,0 +1,39 @@
+/**index.wxss**/
+.container {
+  padding:50rpx
+
+}
+ 
+.search {
+  display: block;
+  width: 602rpx;
+  height: 60rpx;
+  background-color: white;
+  border: 1rpx solid rgba(44, 44, 44, 0.836);
+  border-radius: 20rpx;
+  margin: 30rpx auto;
+  padding-left: 30rpx;
+}
+.all{
+  padding: 10rpx 6rpx; 
+  margin: 10rpx auto
+}
+
+.aitem {
+  padding: 16rpx 10rpx 10rpx 20rpx;
+  margin-bottom: 10rpx;
+  background-color: rgba(233, 230, 230, 0.664);
+  border-bottom: solid rgb(214, 214, 214) 1rpx;
+  border-radius: 14rpx;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  font-size: 36rpx;
+  margin-bottom: 10rpx;
+}
+.site {
+  font-size: 20rpx;
+  align-self:flex-end;
+}
+

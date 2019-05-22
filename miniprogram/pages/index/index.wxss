@@ -1,0 +1,149 @@
+
+
+/* pages/notes/notes.wxss */
+page {
+  background-color: rgb(247, 247, 247);
+  height: 100%;
+  box-sizing: border-box;
+  /* padding: 5rpx; */
+
+}
+.container {
+  /* background-color: rgb(199, 199, 199); */
+  /* margin: 0 auto; */
+  /* padding: 40rpx; */
+  height: 96%;    
+  position: relative;
+  /* display: flex; */
+
+  
+}
+.userinfo {
+  background-color: white;
+  padding: 50rpx 50rpx;
+  /* height: 195rpx;
+  position: relative; */
+  display: flex;
+
+}
+.userinfo-avatar {
+  width: 145rpx;
+  height: 145rpx;
+  border-radius: 50%;
+  margin: auto 40rpx;
+  /* margin-left: 40rpx; */
+
+}
+.userinfo-nickname {
+  display: inline;
+  /* position:absolute;
+  bottom: 50rpx; */
+  margin-left: 20rpx;
+  /* line-height: 100rpx;
+  vertical-align: center; */
+  margin: auto;
+  margin-bottom: 15rpx;
+  margin-left: 0;
+}
+.first {
+  height: 180rpx;
+  margin-top: 50rpx;
+  padding: 0 80rpx 0 80rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 0.5rpx solid rgb(243, 243, 243)
+}
+.number {
+  flex-basis: 200rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+.num {
+  align-self: center;
+}
+.small {
+  /* display: block; */
+  font-size: 30rpx;
+  align-self: center;
+
+}
+.second {
+  padding: 0 0 0 60rpx;
+  background-color: white;
+  border: 0.5rpx solid rgb(243, 243, 243);
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.third {
+  padding: 0 0 0 60rpx;
+  background-color: white;
+  border: 0.5rpx solid rgb(243, 243, 243);
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+}
+.index-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 100rpx;
+  /* height: 100rpx; */
+
+}
+.tag1 {
+  margin-right: 420rpx;
+}
+.tag2 {
+  margin-right: 380rpx;
+}
+.line {
+  border-bottom: 0.5rpx solid rgb(229, 229, 229);
+
+}
+image {
+  height: 40rpx;
+  width: 40rpx;
+}
+ 
+.rfloat {
+  margin-right: 20rpx;
+  align-self: center;
+}
+.addnew {
+  width: 680rpx;
+  margin: 10rpx auto;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.add {
+  height: 40rpx;
+  width: 40rpx;
+  align-self: center;
+}
+
+text {
+  color: rgba(10, 10, 10, 0.842)
+}
+
+/* .btn-newtip {
+  background-color: rgb(240, 240, 240);
+  width: 160rpx;
+
+}
+#note {
+  
+  margin-right: 40rpx;
+}
+#memo {
+  margin-left: 40rpx;
+} */

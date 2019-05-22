@@ -1,0 +1,28 @@
+<!--index.wxml-->
+
+
+<!--index.wxml-->
+<view class="container">
+  <form class="toserver" bindsubmit="formSubmit" bindreset="formReset">
+    <checkbox-group class="choose" name="tags">
+      <checkbox class="item" value="person">人</checkbox>
+      <checkbox class="item" value="thing">物</checkbox>
+      <checkbox class="item" value="land">景</checkbox>
+      <checkbox class="item" value="life">生活</checkbox>
+      <checkbox class="item" value="emotion">情绪</checkbox>
+      <checkbox class="item" value="book">读书</checkbox>
+      <checkbox class="item" value="run">运动</checkbox>
+    </checkbox-group>
+
+    <textarea class="words" name="content" placeholder="enter"></textarea>
+
+    <view class="now" name="tp">
+      <!-- <input value='{{nowDate}}' name='time' ></input> -->
+      <input value='{{province}}{{city}}' name='location'></input>
+    </view>
+    
+    <button class="btn-newtip" formType="submit" disabled="{{disabled}}">
+      提交
+    </button>
+  </form>
+</view>
