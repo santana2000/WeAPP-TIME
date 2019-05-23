@@ -5,7 +5,7 @@
 <view class="container">
   <form class="toserver" bindsubmit="formSubmit" bindreset="formReset">
     
-    <textarea class="words" name="content" placeholder="  即使再平凡的一天，也会有闪闪发光的一刻 . . ."></textarea>
+    <textarea class="words" name="content" placeholder="即使再平凡的一天，也会有闪闪发光的一刻 . . ."></textarea>
     <view class='tag'>为你的回忆加上标签吧 ~</view>
   
     <checkbox-group class="choose" name="tags">
@@ -14,17 +14,17 @@
       <checkbox class="item" value="land">景</checkbox>
       <checkbox class="item" value="life">生活</checkbox>
       <checkbox class="item" value="emotion">情绪</checkbox>
-      <checkbox class="item" value="book">兴趣</checkbox>
-      <checkbox class="item" value="run">运动</checkbox>
+      <!-- <checkbox class="item" value="book">兴趣</checkbox>
+      <checkbox class="item" value="run">运动</checkbox> -->
       <!-- <checkbox class="item" value="age">生命</checkbox> -->
     </checkbox-group>
 
     <view class="now" name="tp">
       <!-- <input value='{{nowDate}}' name='time' ></input> -->
-      <input value='{{province}}{{city}}' name='location'></input>
+      <input value='{{city}}' name='location'></input>
     </view>
     
-    <button class="btn-newtip" formType="submit" disabled="{{disabled}}">
+    <button class="btn-newtip" formType="submit" bindtap='toNotes' disabled="{{disabled}}">
       提交
     </button>
   </form>

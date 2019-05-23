@@ -7,7 +7,8 @@
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击登录 </button>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <!-- bindtap="bindViewTap" -->
+      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
@@ -42,20 +43,20 @@
 
     <view class="index-item">
       <image class="add" src="../../images/others/yes.png" />
-      <text class="tag1">指定计划</text>
+      <text class="tag1">制定计划</text>
       <image class='rfloat' src='../../images/others/right.png'></image>
     </view>
 
   </view>
 
   <view class="third">
-    <view class="index-item line">
+    <view class="index-item line" bindtap="toGuidePage">
       <image class="add" src="../../images/others/yinwen.png" />
       <text class="tag2">使用说明</text>
       <image class='rfloat' src='../../images/others/right.png'></image>
     </view>
 
-    <view class="index-item">
+    <view class="index-item"  bindtap="toAboutPage">
       <image class="add" src="../../images/others/about.png" />
       <text class="tag2">关于我们</text>
       <image class='rfloat' src='../../images/others/right.png'></image>

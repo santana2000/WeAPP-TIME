@@ -1,0 +1,19 @@
+<!--pages/guide/guide.wxml-->
+<view class="container">
+
+  <text class='intro'>使用说明：</text>
+  <view class="doc"> 
+    <text class="content">
+        ⚡ 点击'记录回忆'添加新内容，每天只能发布一次，不可更改，请决定好要记录的内容
+    </text>
+    <text class="content">
+        ⚡ 第一页是回忆展示汇总，点击单条查看详细内容，可手动下拉刷新
+    </text>
+    <text class="content">
+        ⚡ 主页左侧统计了有所发布的总条数，右侧显示了制定计划的完成率
+    </text>
+    <text class="content">
+        ⚡ 为了记录回忆发表时你所在的位置，登陆后请授予位置获取的权限
+    </text>
+  </view>
+</view>

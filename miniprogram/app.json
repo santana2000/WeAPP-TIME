@@ -7,7 +7,9 @@
     "pages/add/add",
     "pages/about/about",
     "pages/detail/detail",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/guide/guide"
+    
   ],
 
   "tabBar":{

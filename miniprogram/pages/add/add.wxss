@@ -13,7 +13,7 @@ page {
 }
 .words {
   width: 600rpx;
-  padding: 20rpx;
+  padding: 15rpx;
   border: 0.5rpx solid rgb(198, 198, 198);
   border-radius: 15rpx;
   margin-top: 80rpx;
@@ -23,14 +23,15 @@ page {
   color: rgba(49, 48, 48, 0.856);
   margin-left: 10rpx;
   margin-bottom: 10rpx;
+  font-size: 36rpx;
 }
 .choose {
-  margin-left: 10rpx;
+  /* margin-left: 10rpx; */
   margin-top: 30rpx;
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
-  justify-content: start;
+  justify-content: space-between;
 }
 checkbox{
   transform: scale(0.7,0.7);
@@ -56,7 +57,7 @@ checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
 }
 .item {
  
-  margin-right: 10rpx; 
+  /* margin-right: 10rpx;  */
   font-size: 44rpx;
 }
 

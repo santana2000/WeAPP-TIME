@@ -11,7 +11,7 @@ exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
   const records = await db.collection("RECORDS").where({
     openid: wxContext.OPENID
-  }).get()
+  }).orderBy('datetime', 'desc').get()
 
   return {
     recordlist: records

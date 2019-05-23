@@ -10,7 +10,8 @@ function getLocalTime(nS) {
   let minute = date.getMinutes();
   month = month < 10 ? "0" + month : month;
   day = day < 10 ? "0" + day : day;
-  date = year + '-' + month + '-' + day + ' ' + hour + ':' + minute;
+  minute = minute < 10 ? "0" + minute : minute;
+  date = year + '/' + month + '/' + day + ' ' + hour + ':' + minute;
   console.log(date); // 2018-10-09
   return date;
 }

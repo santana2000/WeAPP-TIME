@@ -82,8 +82,11 @@ Page({
     });
 
  
-  
 
+
+  },
+  //页面跳转
+  toNotes: function () {
   },
   //post数据
   formSubmit: function(e) {  
@@ -106,17 +109,30 @@ Page({
         // 调用成功
         // 返回结果放在res.result中，类型为json
          wx.showToast({
-            title: '成功',
+            title: '添加成功',
             icon: 'success',
-            duration: 2000
+            duration: 1500
+          });
+        setTimeout(function () {
+          wx.reLaunch({
+            url: '/pages/notes/notes',
           })
+        }, 1500)
+  
       },
       fail: err => {
         // 调用失败
         console.log(err.errMsg);
 
+      },
+      complete:function(){
+        // wx.navigateTo({
+        //   url: '/pages/notes/notes',
+        // })
       }
     })
+
+   
    
   }
 })

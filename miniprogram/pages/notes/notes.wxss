@@ -10,7 +10,7 @@
   height: 60rpx;
   background-color: white;
   border: 1rpx solid rgba(44, 44, 44, 0.836);
-  border-radius: 10rpx;
+  border-radius: 30rpx;
   margin: 30rpx auto;
   padding-left: 30rpx;
 }

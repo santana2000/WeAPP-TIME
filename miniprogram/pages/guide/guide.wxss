@@ -1,0 +1,19 @@
+/* pages/guide/guide.wxss */
+.container {
+    padding: 50rpx;
+}
+ 
+.intro {
+    padding-left: 10rpx;
+    /* line-height: 30rpx; */
+}
+.doc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10rpx;
+    /* line-height: 50rpx; */
+}
+.content {
+    font-size: 34rpx;
+}

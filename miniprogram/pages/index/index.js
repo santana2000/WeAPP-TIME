@@ -69,5 +69,15 @@ Page({
     wx.navigateTo({
       url:"/pages/add/add",
     })
-  }
+  },
+  toAboutPage:function(){
+    wx.navigateTo({
+      url:"/pages/about/about",
+    })
+  },
+  toGuidePage:function(){
+    wx.navigateTo({
+      url:"/pages/guide/guide",
+    })
+  },
 })

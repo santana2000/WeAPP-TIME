@@ -1,1 +1,8 @@
 /* pages/about/about.wxss */
+.container {
+    padding: 60rpx;
+}
+.out {
+    padding: 10rpx;
+    line-height: 34rpx;
+}
