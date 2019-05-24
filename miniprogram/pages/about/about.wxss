@@ -1,6 +1,6 @@
 /* pages/about/about.wxss */
 .container {
-    padding: 60rpx;
+    padding: 80rpx;
 }
 .out {
     padding: 10rpx;

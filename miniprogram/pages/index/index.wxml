@@ -43,7 +43,7 @@
 
     <view class="index-item">
       <image class="add" src="../../images/others/yes.png" />
-      <text class="tag1">制定计划</text>
+      <text class="tag1">查看日历</text>
       <image class='rfloat' src='../../images/others/right.png'></image>
     </view>
 

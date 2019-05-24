@@ -44,21 +44,21 @@ Page({
       success: res => {
         // 调用成功
         // 返回结果放在res.result中，类型为json
-        // console.log(res.result);
+         
         that.setData({
           olist: res.result.recordlist.data,
         });
         //转换日期
         that.timeToDate();
-        console.log(that.data.olist)
+        // console.log(that.data.olist)
         that.setData({
           alist: that.data.olist,
         });
-        wx.showToast({
-          title: '成功',
-          icon: 'success',
-          duration: 2000
-        });
+        // wx.showToast({
+        //   title: '成功',
+        //   icon: 'success',
+        //   duration: 2000
+        // });
       },
       fail: err => {
         // 调用失败
@@ -84,29 +84,28 @@ Page({
       name: 'getAllreco',
       data: {},
       success: res => {
-        // 调用成功
         // 返回结果放在res.result中，类型为json
-        // console.log(res.result);
         that.setData({
           olist: res.result.recordlist.data,
         });
         //转换日期
         that.timeToDate();
-        console.log(that.data.olist)
         that.setData({
           alist: that.data.olist,
         });
-        wx.showToast({
-          title: '成功',
-          icon: 'success',
-          duration: 2000
-        });
+        // wx.showToast({
+        //   title: '成功',
+        //   icon: 'success',
+        //   duration: 2000
+        // });
+        //数据异步请求结束之后再停止下拉动画
+        wx.stopPullDownRefresh();
+
       },
       fail: err => {
-        // 调用失败
         console.log(err.errMsg);
       }
-    })
+    });
   },
   //产看用户权限
   getUserSetting: function(){
@@ -120,28 +119,10 @@ Page({
     });
   },
   
-  //测试json数据
-  getJsonData:function(){
-    var that = this;
-    wx.request({
-      url:"https://30paotui.com/article/list",
-      success:function(res){
-        that.setData({
-          alist:res.data.data
-        });
-        console.log(that.data.alist);
-
-      },
-      fail:function(err){
-        console.log(err)
-      }
-    });
-  
-  },
 
   //跳转至详情页
   toDetail:function(event){
-    console.log(event.currentTarget.dataset.id);
+    // console.log(event.currentTarget.dataset.id);
     var idx = event.currentTarget.dataset.id;
     wx.navigateTo({
       url:"/pages/detail/detail?ID="+idx,
@@ -162,3 +143,22 @@ Page({
       }
     })
     */
+
+  //测试json数据
+  // getJsonData:function(){
+  //   var that = this;
+  //   wx.request({
+  //     url:"https://30paotui.com/article/list",
+  //     success:function(res){
+  //       that.setData({
+  //         alist:res.data.data
+  //       });
+  //       console.log(that.data.alist);
+
+  //     },
+  //     fail:function(err){
+  //       console.log(err)
+  //     }
+  //   });
+  
+  // },

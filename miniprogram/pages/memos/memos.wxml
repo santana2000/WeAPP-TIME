@@ -1,14 +1,13 @@
 <!--index.wxml-->
 <view class="container" >
-  <view class="plan">
-    <textarea placeholder="制定计划："></textarea>
-  </view>
-
+  <!-- <view class="plan">
+    <!-- <textarea placeholder="制定计划："></textarea> -->
+  <!-- </view> --> 
   <calendar calendar-style="calendar"/>
 
-  <picker mode="date"
+  <!-- <picker mode="date"
     start="{{startDste}}" 
     end="{{endDste}}"
     fields="day">选择时间
-  </picker>
+  </picker> -->
 </view>

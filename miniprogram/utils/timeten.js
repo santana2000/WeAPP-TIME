@@ -12,7 +12,7 @@ function getLocalTime(nS) {
   day = day < 10 ? "0" + day : day;
   minute = minute < 10 ? "0" + minute : minute;
   date = year + '/' + month + '/' + day + ' ' + hour + ':' + minute;
-  console.log(date); // 2018-10-09
+  // console.log(date); // 2018-10-09
   return date;
 }
 module.exports = {

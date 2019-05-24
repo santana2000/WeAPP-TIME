@@ -1,13 +1,23 @@
 <!--index.wxml-->
 <view class="container">
-    <!-- <text class="user-motto">{{motto}}</text> -->
-    <input class="search" placeholder="搜索记录"/>
-    <view class="all">
-        <view class="aitem" data-id='{{item.aid}}'  
-              wx:for="{{alist}}" wx:key="item.aid" bindtap="toDetail" >
-          <view class='content'> {{item.content}}  </view>
-          <view class='site'>{{item.site}}  {{item.xtime}}    </view>
-        </view>
-    </view>
+
+
+  <view class='top'>
+      <input class="search" placeholder="搜索记录"/>
+      <image class='search-icon'src="../../images/others/search.png" ></image>
+
+      <!-- <view class='search-icon'>
+      </view> -->
+  </view>
+
+  <view class="all">
+      <view class="aitem" data-id='{{item.datetime}}'  
+            wx:for="{{alist}}" wx:key="item.aid" bindtap="toDetail" >
+        <view class='content'> {{item.content}}  </view>
+        <view class='site'>{{item.site}}  {{item.xtime}}    </view>
+      </view>
+  </view>
+
+
   
 </view>
