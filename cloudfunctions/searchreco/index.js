@@ -3,7 +3,7 @@ const cloud = require('wx-server-sdk')
 
 cloud.init()
 const db = cloud.database({
-  env: 'jkle-plan-cua0s'
+  env: 'onetime-9jejf'
 })
 
 // 云函数入口函数
