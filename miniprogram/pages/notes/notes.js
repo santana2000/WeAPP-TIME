@@ -32,19 +32,17 @@ Page({
     ],
     alist: [ ],
     olist: [ ],
+    search:'',
     timeget:''
   },
   onLoad: function () {
     var that = this;
-
     //云函数
     wx.cloud.callFunction({
       name: 'getAllreco',
       data: { },
       success: res => {
-        // 调用成功
         // 返回结果放在res.result中，类型为json
-         
         that.setData({
           olist: res.result.recordlist.data,
         });
@@ -65,7 +63,6 @@ Page({
         console.log(err.errMsg);
       }
     })
-    // this.getJsonData();
   },
   //
   timeToDate:function(){
@@ -78,7 +75,6 @@ Page({
   //下拉刷新
   onPullDownRefresh: function () {
     var that = this;
-
     //云函数
     wx.cloud.callFunction({
       name: 'getAllreco',
@@ -106,6 +102,84 @@ Page({
         console.log(err.errMsg);
       }
     });
+  },
+  //搜索
+  getUserString:function(e){
+    var that = this;
+    if(e.detail.value.trim() == ''){
+        wx.showToast({
+          title: '内容不能为空',
+          icon: 'none',
+          duration: 2000
+        });
+        this.setData({
+          search:''
+        });
+    }else{
+      this.setData({
+        search:e.detail.value.trim()
+      });
+    }
+   
+  },
+  searchNotes:function(){
+    var that = this;
+    if (that.data.search == '') {
+      wx.cloud.callFunction({
+        name: 'getAllreco',
+        data: { },
+        success: res => {
+          // 返回结果放在res.result中，类型为json
+          that.setData({
+            olist: res.result.recordlist.data,
+          });
+          //转换日期
+          that.timeToDate();
+          // console.log(that.data.olist)
+          that.setData({
+            alist: that.data.olist,
+          });
+          // wx.showToast({
+          //   title: '成功',
+          //   icon: 'success',
+          //   duration: 2000
+          // });
+        },
+        fail: err => {
+          // 调用失败
+          console.log(err.errMsg);
+        }
+      });
+    }else{
+      wx.cloud.callFunction({
+        name:'searchreco',
+        data:{
+          searchvalue:that.data.search
+        },
+        success:res => {
+          console.log( res.result.recordlist.data)
+          // var resMsg = JSON.parse(res.result);
+          // console.log( resMsg.data)
+          that.setData({
+            olist: res.result.recordlist.data,
+          });
+          //转换日期
+          that.timeToDate();
+          // console.log(that.data.olist)
+          that.setData({
+            alist: that.data.olist,
+          });
+          // if(res.result.recordlist.data.length !== 0){
+            
+          // }
+         
+        },
+        fail: err => {
+          console.log(err.message)
+        },
+      })
+    }
+  
   },
   //产看用户权限
   getUserSetting: function(){

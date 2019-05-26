@@ -3,8 +3,8 @@
 
 
   <view class='top'>
-      <input class="search" placeholder="搜索记录"/>
-      <image class='search-icon'src="../../images/others/search.png" ></image>
+      <input class="search" placeholder="搜索记录" bindblur='getUserString'/>
+      <image class='search-icon'src="../../images/others/search.png" bindtap='searchNotes'></image>
 
       <!-- <view class='search-icon'>
       </view> -->
