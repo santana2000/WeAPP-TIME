@@ -1,6 +1,0 @@
-# a weixin app
-
-## record
-
- 
-
