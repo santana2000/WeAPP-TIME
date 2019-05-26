@@ -9,9 +9,9 @@
     <text class="content">
         ⚡ 回忆展示汇总页，点击单条查看详细内容，可手动下拉刷新
     </text>
-    <!-- <text class="content">
+    <text class="content">
         ⚡ 主页左侧统计了发布过的总条数，右侧显示了制定计划的完成率
-    </text> -->
+    </text>
     <text class="content">
         ⚡ 为了记录回忆发表时你所在的位置，请登陆后授予位置获取的权限
     </text>
