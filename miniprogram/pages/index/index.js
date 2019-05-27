@@ -5,7 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
-    numall:22,
+    numall:'',
     proportion:85,
     userInfo: {},
     hasUserInfo: false,
@@ -51,6 +51,22 @@ Page({
         // 调用成功
         // 返回结果放在res.result中，类型为json
         console.log(res.result)
+      },
+      fail: err => {
+        console.log(err.errMsg)
+      }
+    })
+    var that = this;
+    wx.cloud.callFunction({
+      name: 'getnum',
+      data: {},
+      success: res => {
+        // 调用成功
+        // 返回结果放在res.result中，类型为json
+        console.log(res.result)
+        that.setData({
+          numall: res.result.recoNum
+        })
       },
       fail: err => {
         console.log(err.errMsg)
